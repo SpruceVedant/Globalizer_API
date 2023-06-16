@@ -60,4 +60,6 @@ app.use('/doc', docRoutes);
 app.use('/student', studentRoutes);
 app.use('/queries', queryRoutes);
 const PORT = process.env.PORT || 8080;
-app.listen(PORT, console.log(`Listening on port ${PORT}...`));
+app.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}...`)
+});
