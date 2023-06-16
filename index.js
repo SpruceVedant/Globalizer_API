@@ -59,5 +59,5 @@ app.use('/sop', sopRoute);
 app.use('/doc', docRoutes);
 app.use('/student', studentRoutes);
 app.use('/queries', queryRoutes);
-const port = process.env.PORT || 8080;
-app.listen(port, console.log(`Listening on port ${port}...`));
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, console.log(`Listening on port ${PORT}...`));
